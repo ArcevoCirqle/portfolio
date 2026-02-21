@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uthman Salaudeen | Fullstack Developer</title>
+  <meta name="description" content="Portfolio of Uthman Salaudeen, Fullstack Developer and Digital Tutor, showcasing projects in authentication systems and real-time web applications.">
+  <meta name="keywords" content="Fullstack Developer, Portfolio, HTML, CSS, JavaScript, React, Node.js">
+  <meta name="author" content="Uthman Salaudeen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">US.<span>dev</span></div>
+
+  <div class="nav-controls">
+    <button id="menuBtn" class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <button id="themeToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+  </div>
+
+  <ul id="navLinks" class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span class="highlight">Uthman</span></h1>
+    <h2 class="tagline">Fullstack Developer & Digital Tutor</h2>
+    <p class="intro-text">
+      Engineering student at LASU, building fullstack web applications and teaching digital skills.
+    </p>
+  </div>
+  <div class="hero-img">
+    <img src="./me5.jpg" alt="Uthman Salaudeen" class="main-img">
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="about-wrapper">
+    <div class="about-img">
+      <img src="./me5.jpg" alt="About Uthman">
+    </div>
+    <p>
+      Founder of ArcevoCirqle and a digital tutor at Lagos State University. Passionate about building modular web systems and teaching others.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+  <ul class="skills-list">
+    <li>HTML5, CSS3, Flexbox, Grid</li>
+    <li>JavaScript, DOM, API integration</li>
+    <li>React, Next.js</li>
+    <li>Node.js, Express, Fastify</li>
+    <li>MongoDB, PostgreSQL, Prisma</li>
+    <li>Git & GitHub</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Arc-ID</h3>
+    <p>Reusable authentication system with signup, login, email verification, and password recovery.</p>
+    <span>Next.js, Fastify, Prisma, PostgreSQL</span>
+  </div>
+  <div class="project-card">
+    <h3>NexaSync</h3>
+    <p>Real-time interview platform with video calls, live code editor, and scheduling for admins.</p>
+    <span>React, Node.js, Convex, Clerk, Stream</span>
+  </div>
+  <div class="project-card">
+    <h3>Auth Prototype</h3>
+    <p>MERN stack authentication app with signup, login, email verification, and password reset.</p>
+    <span>MERN, Mailtrap</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="exp-card">
+    <h3>Founder – ArcevoCirqle</h3>
+    <p>Managing digital skills initiatives and software development projects.</p>
+  </div>
+  <div class="exp-card">
+    <h3>Frontend Developer – Ummah Square</h3>
+    <p>Built responsive UI and improved UX of web apps.</p>
+  </div>
+  <div class="exp-card">
+    <h3>Digital Tutor – Lagos State University</h3>
+    <p>Guided students through technical and theoretical concepts.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="photo-grid">
+  <img src="./me1.jpg" alt="Working with friends">
+  <img src="./me2.jpg" alt="Tech session">
+  <img src="./me3.jpg" alt="Creative session">
+  <img src="./me4.jpg" alt="Team meetup">
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <label for="userName">Your Name</label>
+    <input type="text" id="userName" placeholder="Your Name" required>
+    <label for="userEmail">Your Email</label>
+    <input type="email" id="userEmail" placeholder="Your Email" required>
+    <label for="userMessage">Message</label>
+    <textarea id="userMessage" placeholder="Message" rows="5" required></textarea>
+    <button type="submit" id="submitBtn" style="display: flex; align-items: center; justify-content: center; padding: var(--space-2) var(--space-3);">
+        <i class="fab fa-whatsapp" style="font-size: var(--space-2); margin-right: 5px;"></i>Send</button>
+    <p id="formStatus"></p>
+  </form>
+
+  <div class="contact-social">
+    <a href="https://github.com/kennygr8" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/kennygr8" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/arcevocirqle"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/kenny.gr8"><i class="fab fa-instagram"></i></a>
+    <a href="https://m.facebook.com/kenny.gr8/"><i class="fab fa-facebook"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 - Uthman Salaudeen</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
